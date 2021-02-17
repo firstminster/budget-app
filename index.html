@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Budgety - App</title>
+</head>
+
+<body>
+
+    <!-- Top -->
+    <div class="top">
+        <div class="container">
+            <div class="budget-content">
+                <div class="budget-title">
+                    Available Budget in <em class="budget-month">%Month%</em>
+                </div>
+
+                <div class="budget-value">+ 2,345.64</div>
+
+                <div class="budget-income">
+                    <ul>
+                        <li class="income-text">INCOME</li>
+                        <li class="income-value">+ 4,300.00</li>
+                        <li class="income-percentage">&nbsp;</li>
+                    </ul>
+
+                </div>
+
+                <div class="budget-expenses">
+                    <ul>
+                        <li class="expenses-text">EXPENSES</li>
+                        <li class="expenses-value">- 1,954.36</li>
+                        <li class="expenses-percentage">45%</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="bottom">
+        <div class="container">
+            <div class="bottom-content alert-parent">
+
+                <!-- Input section -->
+                <div class="add">
+                    <div class="add-container">
+                        <select class="add-type">
+                            <option value="inc" selected>+</option>
+                            <option value="exp">-</option>
+                        </select>
+                        <input type="text" class="add-description" placeholder="Add description">
+                        <input type="number" class="add-value" placeholder="Value">
+                        <button value="" class="add-btn"><i class="fas fa-check"></i> </button>
+                        <button value="" class="update-btn"><i class="fas fa-check-double"></i> </button>
+                    </div>
+                </div>
+
+                <!-- Show Alert Here -->
+
+                <!-- Display section -->
+                <div class="flex-layout">
+
+                    <!-- Income -->
+                    <div class="income">
+                        <h2 class="income-title">INCOME</h2>
+
+                        <ul class="income-list">
+                            <!-- <li class="item" id="inc-0">
+                                <strong>Salary</strong>
+                                <span class="inc-style">+ 2,100.00</span>
+                                <a href="#" class="edit-btn">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <a href="#" class="delete-btn">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </li>
+                            <li class="item" id="inc-1">
+                                <strong>Sold car</strong>
+                                <span class="inc-style">+ 1,500.00</span>
+                                <a href="#" class="edit-btn">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <a href="#" class="delete-btn">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <!-- Expenses -->
+                    <div class="expenses">
+                        <h2 class="expenses-title">EXPENSES</h2>
+
+                        <ul class="expenses-list">
+
+                            <!-- <li class="item" id="exp-0">
+                                <strong>Apartment rent</strong>
+                                <span class="exp-style">- 900.00</span>
+                                <em class="exp-style">21%</em>
+                                <a href="#" class="edit-btn">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <a href="#" class="delete-btn">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </li>
+                            <li class="item" id="exp-1">
+                                <strong>Grocery shopping</strong>
+                                <span class="exp-style">- 435.00</span>
+                                <em class="exp-style">10%</em>
+                                <a href="#" class="edit-btn">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <a href="#" class="delete-btn">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="container footer">
+            Budgety &copy;
+        </footer>
+
+        <!-- App Script -->
+        <script src="app.js"></script>
+</body>
+
+</html>
